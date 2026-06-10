@@ -1,0 +1,24 @@
+{
+  "name": "prison-tycoon",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.prison-tycoon.app",
+    "productName": "Prison Tycoon",
+    "files": ["main.js", "preload.js", "index.html", "game.js"],
+    "win":   { "target": "nsis" },
+    "mac":   { "target": "dmg" },
+    "linux": { "target": "AppImage" }
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "allowScripts": {
+    "electron@30.5.1": true
+  }
+}
