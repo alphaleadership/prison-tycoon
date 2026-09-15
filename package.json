@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "electron": "^39.8.10",
-    "electron-builder": "^24.0.0"
+    "electron-builder": "^26.15.3"
   },
   "allowScripts": {
     "electron@30.5.1": true
